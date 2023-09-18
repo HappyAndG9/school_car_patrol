@@ -1,0 +1,22 @@
+server:
+  port:
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#服务器：
+spring:
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
